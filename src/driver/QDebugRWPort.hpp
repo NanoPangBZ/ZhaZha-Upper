@@ -29,7 +29,7 @@ public:
             }
             hex += QStringLiteral("%1 ").arg(data[i], 2, 16, QLatin1Char('0')).toUpper();
         }
-        qDebug().noquote() << QStringLiteral("QDebugRWPort(%1) Write (len%2):\n%3")
+        qDebug().noquote() << QStringLiteral("\nQDebugRWPort(%1) Write (len%2):\n%3")
                                   .arg(Name())
                                   .arg(len)
                                   .arg(hex);

@@ -39,10 +39,12 @@ endif()
 
 add_executable(ZhaZhaUpper
     src/main.cpp
+    src/Bridge.cpp
+    src/Bridge.hpp
+    src/driver/QDebugRWPort.hpp
     src/backstage/ComHost/ComHost.cpp
     src/backstage/ComHost/ComHost.hpp
     src/backstage/RWPort/RWPort.hpp
-    src/backstage/RWPort/CliRWPort.hpp
     qml.qrc
 )
 
@@ -53,6 +55,7 @@ set_target_properties(ZhaZhaUpper PROPERTIES
 
 target_include_directories(ZhaZhaUpper
     PRIVATE
+        src
         src/backstage
         src/backstage/ComHost
         src/backstage/RWPort

@@ -33,14 +33,16 @@ ApplicationWindow {
         Button {
             Layout.alignment: Qt.AlignHCenter
             Layout.topMargin: 8
-            text: qsTr("点我试试")
-            onClicked: greeting.text = qsTr("Hello, Qt Quick!")
+            text: qsTr("ComHost 测试")
+            onClicked: {
+                resultText.text = bridge.ComHostTest()
+            }
         }
 
         Text {
-            id: greeting
+            id: resultText
             Layout.alignment: Qt.AlignHCenter
-            text: ""
+            text: bridge.lastTestResult
             color: "#6cb6ff"
             font.pixelSize: 14
         }

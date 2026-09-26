@@ -53,14 +53,6 @@ set_target_properties(ZhaZhaUpper PROPERTIES
     MACOSX_BUNDLE TRUE
 )
 
-target_include_directories(ZhaZhaUpper
-    PRIVATE
-        src
-        src/backstage
-        src/backstage/ComHost
-        src/backstage/RWPort
-)
-
 target_link_libraries(ZhaZhaUpper
     PRIVATE
         Qt5::Core

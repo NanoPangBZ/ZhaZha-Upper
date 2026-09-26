@@ -1,6 +1,6 @@
 #include "Bridge.hpp"
 
-#include "ComHost.hpp"
+#include "backstage/ComHost/ComHost.hpp"
 #include "driver/QDebugRWPort.hpp"
 
 Bridge::Bridge(QObject *parent)

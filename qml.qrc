@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>qml/Main.qml</file>
+        <file>qml/ControlPanel.qml</file>
+        <file>qml/DarkComboBox.qml</file>
+        <file>resources/icons/connected.png</file>
+        <file>resources/icons/disconnected.png</file>
     </qresource>
 </RCC>
